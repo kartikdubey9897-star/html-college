@@ -1,0 +1,47 @@
+<!--
+    Create a Web Page for Student Registration Form
+    with Email Validation by applying form attributes
+    (method, action, placeholder, required)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+</head>
+<body>
+  <h1>Student Registration Form</h1>
+  
+  <!-- form with method, action, placeholder, required -->
+  <form method="post" action="submit_form.html">
+    
+    <label>First Name:</label><br>
+    <input type="text" name="firstname" placeholder="Enter your first name" required><br><br>
+
+    <label>Last Name:</label><br>
+    <input type="text" name="lastname" placeholder="Enter your last name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <label>Age:</label><br>
+    <input type="number" name="age" placeholder="Enter your age"><br><br>
+
+    <label>Course:</label><br>
+    <select name="course" required>
+      <option value="" disabled selected>Select Course</option>
+      <option value="B.Sc">B.Sc</option>
+      <option value="B.Com">B.Com</option>
+      <option value="B.Tech">B.Tech</option>
+      <option value="B.A">B.A</option>
+    </select><br><br>
+
+    <label>Address:</label><br>
+    <textarea name="address" rows="3" cols="30" placeholder="Enter your address"></textarea><br><br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
